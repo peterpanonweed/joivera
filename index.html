@@ -119,7 +119,9 @@ section{padding:96px 0}
 .ingr{background:var(--forest);color:var(--ivory)}
 .ingr .sec-head h2{color:var(--ivory)}
 .ingr .sec-head p{color:rgba(243,238,226,.75)}
-.ingr-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center;max-width:1040px;margin:0 auto}
+.ingr-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;max-width:1040px;margin:0 auto}
+.ingr-photo{order:2}
+.ingr-list{order:1}
 .ingr-photo img{width:100%;border-radius:4px;box-shadow:0 26px 52px -26px rgba(0,0,0,.5);border:1px solid rgba(198,169,108,.35)}
 .ingr-list{border-top:1px solid rgba(243,238,226,.2)}
 .ingr-row{display:flex;justify-content:space-between;gap:20px;align-items:baseline;padding:16px 4px;border-bottom:1px solid rgba(243,238,226,.2)}
@@ -223,7 +225,7 @@ footer{background:var(--forest-deep);color:rgba(243,238,226,.8);padding:70px 0 4
   .rit-grid{grid-template-columns:1fr;gap:40px}
   .rit-photo{max-width:380px;margin:0 auto}
   .ingr-grid{grid-template-columns:1fr;gap:40px}
-  .ingr-photo{max-width:420px;margin:0 auto}
+  .ingr-photo{max-width:420px;margin:0 auto;order:-1}
   .care-grid{grid-template-columns:1fr;gap:36px}
   .care-photo{max-width:380px;margin:0 auto}
   .shop-grid{grid-template-columns:1fr;max-width:420px}
@@ -237,16 +239,14 @@ footer{background:var(--forest-deep);color:rgba(243,238,226,.8);padding:70px 0 4
 }
 
 /* ───── Reviews ───── */
-.reviews{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.rev-stars-row{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:44px}
-.rev-stars{color:var(--gold);font-size:1.3rem;letter-spacing:.15em}
-.rev-avg{font-family:var(--serif);font-size:1.05rem;color:var(--forest)}
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1080px;margin:0 auto}
-.rev-card{background:var(--ivory);border:1px solid var(--line);padding:28px 26px;display:flex;flex-direction:column;gap:12px}
-.rev-card .stars{color:var(--gold);font-size:.95rem;letter-spacing:.12em}
-.rev-card p{font-size:.92rem;color:#4b4d42;font-style:italic}
-.rev-card .who{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--forest);display:flex;align-items:center;gap:8px}
-.rev-card .who .verified{color:var(--gold);font-style:normal;letter-spacing:0;text-transform:none;font-size:.7rem}
+.reviews{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:56px 0}
+.reviews .sec-head{margin-bottom:32px}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin:0 auto}
+.rev-card{background:var(--ivory);border:1px solid var(--line);padding:20px 20px;display:flex;flex-direction:column;gap:8px}
+.rev-card .stars{color:var(--gold);font-size:.82rem;letter-spacing:.1em}
+.rev-card p{font-size:.85rem;color:#4b4d42;font-style:italic;line-height:1.5}
+.rev-card .who{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);display:flex;align-items:center;gap:6px}
+.rev-card .who .verified{color:var(--gold);font-style:normal;letter-spacing:0;text-transform:none;font-size:.66rem}
 @media(max-width:960px){.rev-grid{grid-template-columns:1fr;max-width:460px}}
 
 /* ───── Bundle countdown ───── */
@@ -444,10 +444,6 @@ footer{background:var(--forest-deep);color:rgba(243,238,226,.8);padding:70px 0 4
       <span class="eyebrow" data-i18n="rv.eyebrow">Reviews</span>
       <h2 data-i18n="rv.h2">Loved by real routines</h2>
       <p data-i18n="rv.p">Ratings from customers who made the ritual part of their week.</p>
-    </div>
-    <div class="rev-stars-row">
-      <span class="rev-stars">★★★★★</span>
-      <span class="rev-avg" data-i18n="rv.avg">4.9 out of 5 · based on 214 reviews</span>
     </div>
     <div class="rev-grid">
       <div class="rev-card">
@@ -797,7 +793,7 @@ $("checkoutBtn").addEventListener("click",()=>{
 });
 
 /* ───── WhatsApp checkout ───── */
-const WA_NUMBER = "6281234567890"; // TODO: replace with the real Joivéra WhatsApp Business number
+const WA_NUMBER = "6281238037263"; // Joivéra WhatsApp Business number
 $("waCheckoutBtn").addEventListener("click",()=>{
   const ids = Object.keys(cart);
   if(!ids.length) return;
