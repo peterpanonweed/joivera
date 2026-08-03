@@ -115,6 +115,10 @@ section{padding:96px 0}
 .rstep .num{font-family:var(--serif);font-size:2rem;color:var(--gold);line-height:1;min-width:42px;text-align:center}
 .rstep h3{font-size:1.25rem;letter-spacing:.05em}
 .rstep p{font-size:.92rem;color:#4b4d42;margin-top:3px}
+.rit-tip{margin-top:24px;padding:22px 24px;background:var(--cream);border-left:2px solid var(--gold);border-radius:2px}
+.rit-tip-h{display:block;font-family:var(--serif);font-size:1.05rem;color:var(--forest);margin-bottom:10px}
+.rit-tip p{font-size:.85rem;color:#585a4e;line-height:1.6;margin-bottom:10px}
+.rit-tip p:last-child{margin-bottom:0}
 
 /* ingredients */
 .ingr{background:var(--forest);color:var(--ivory)}
@@ -384,6 +388,11 @@ footer{background:var(--forest-deep);color:rgba(243,238,226,.8);padding:70px 0 4
         <div class="rstep"><div class="num">III</div><div><h3 data-i18n="ri.t3">Rest</h3><p data-i18n="ri.d3">Leave in for at least 30 minutes — or overnight before shampooing.</p></div></div>
         <div class="rstep"><div class="num">IV</div><div><h3 data-i18n="ri.t4">Rinse</h3><p data-i18n="ri.d4">Rinse and shampoo as usual — always use before washing.</p></div></div>
         <div class="rstep"><div class="num">V</div><div><h3 data-i18n="ri.t5">Repeat</h3><p data-i18n="ri.d5">Use 2–3 times per week for optimal results.</p></div></div>
+        <div class="rit-tip">
+          <span class="rit-tip-h" data-i18n="ri.tip.h">A little goes a long way</span>
+          <p data-i18n="ri.tip.p1">JOIVÉRA Hair Therapy is formulated with a blend of five natural oils that nourish the scalp and hair. A small amount is enough for each application — there is no need to use too much. A light touch keeps hair comfortable, never overly oily.</p>
+          <p data-i18n="ri.tip.p2">Experiencing significant hair shedding? Apply gently and avoid rubbing or massaging too vigorously, to help minimize unnecessary breakage and pulling during application.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -600,11 +609,14 @@ en: {
   'be.t5':'Locks in moisture','be.d5':'Helps maintain the natural moisture of scalp and hair — soft, never greasy.',
   'be.t6':'Calming natural aroma','be.d6':'A gentle botanical scent that turns hair care into a quiet ritual.',
   'ri.eyebrow':'How to use','ri.h2':'The five-step ritual','ri.p':'Five quiet minutes, two to three times a week.',
-  'ri.t1':'Apply','ri.d1':'Apply a few drops directly to the scalp.',
-  'ri.t2':'Massage','ri.d2':'Massage gently in circular motions for 3–5 minutes.',
+  'ri.t1':'Apply','ri.d1':'Dispense a few drops into your palm, rub palms together, then gently apply to scalp and hair — focus on the areas that need extra care.',
+  'ri.t2':'Massage','ri.d2':'Massage gently in circular motions for 2–3 minutes to help the oil absorb.',
   'ri.t3':'Rest','ri.d3':'Leave in for at least 30 minutes — or overnight before shampooing.',
-  'ri.t4':'Rinse','ri.d4':'Rinse and shampoo as usual — always use before washing.',
+  'ri.t4':'Rinse','ri.d4':'Wash your hair with shampoo as usual.',
   'ri.t5':'Repeat','ri.d5':'Use 2–3 times per week for optimal results.',
+  'ri.tip.h':'A little goes a long way',
+  'ri.tip.p1':'JOIVÉRA Hair Therapy is formulated with a blend of five natural oils that nourish the scalp and hair. A small amount is enough for each application — there is no need to use too much. A light touch keeps hair comfortable, never overly oily.',
+  'ri.tip.p2':'Experiencing significant hair shedding? Apply gently and avoid rubbing or massaging too vigorously, to help minimize unnecessary breakage and pulling during application.',
   'in.eyebrow':'Ingredients','in.h2':'Five botanicals. Nothing else.','in.p':'Every drop is made with carefully selected botanical oils. For external use only.',
   'in.w1':'The Indonesian secret — nourishes and helps strengthen hair.',
   'in.w2':'Softens, conditions and helps keep hair moisturised.',
@@ -658,11 +670,14 @@ id: {
   'be.t5':'Menjaga kelembapan','be.d5':'Membantu menjaga kelembapan alami kulit kepala dan rambut — lembut, tidak lengket.',
   'be.t6':'Aroma alami menenangkan','be.d6':'Aroma botani lembut yang mengubah perawatan rambut menjadi ritual yang menenangkan.',
   'ri.eyebrow':'Cara pakai','ri.h2':'Ritual lima langkah','ri.p':'Lima menit tenang, dua hingga tiga kali seminggu.',
-  'ri.t1':'Teteskan','ri.d1':'Teteskan beberapa tetes langsung ke kulit kepala.',
-  'ri.t2':'Pijat','ri.d2':'Pijat lembut dengan gerakan melingkar selama 3–5 menit.',
+  'ri.t1':'Oleskan','ri.d1':'Teteskan beberapa tetes ke telapak tangan, gosokkan kedua telapak, lalu oleskan lembut ke kulit kepala dan rambut — fokus pada area yang butuh perhatian ekstra.',
+  'ri.t2':'Pijat','ri.d2':'Pijat lembut dengan gerakan melingkar selama 2–3 menit agar minyak meresap.',
   'ri.t3':'Diamkan','ri.d3':'Diamkan minimal 30 menit — atau semalaman sebelum keramas.',
-  'ri.t4':'Bilas','ri.d4':'Bilas dan keramas seperti biasa — selalu gunakan sebelum keramas.',
+  'ri.t4':'Bilas','ri.d4':'Keramas seperti biasa.',
   'ri.t5':'Ulangi','ri.d5':'Gunakan 2–3 kali seminggu untuk hasil optimal.',
+  'ri.tip.h':'Sedikit saja sudah cukup',
+  'ri.tip.p1':'Joivéra Hair Therapy diformulasikan dari perpaduan lima minyak alami yang menutrisi kulit kepala dan rambut. Jumlah kecil sudah cukup untuk setiap pemakaian — tidak perlu berlebihan. Pemakaian yang ringan membuat rambut tetap nyaman, tidak terasa berminyak.',
+  'ri.tip.p2':'Mengalami kerontokan yang cukup signifikan? Oleskan dengan lembut dan hindari menggosok atau memijat kulit kepala terlalu kuat, agar meminimalkan patah dan tertariknya rambut yang tidak perlu saat pemakaian.',
   'in.eyebrow':'Bahan','in.h2':'Lima bahan botani. Tanpa tambahan lain.','in.p':'Setiap tetes dibuat dari minyak botani pilihan. Hanya untuk pemakaian luar.',
   'in.w1':'Rahasia Indonesia — menutrisi dan membantu memperkuat rambut.',
   'in.w2':'Melembutkan, merawat, dan membantu menjaga kelembapan rambut.',
